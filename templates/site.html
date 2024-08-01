@@ -1,114 +1,129 @@
+%%html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engenharia Mecânica Consultoria e Treinamento</title>
+    <title>Consultoria e Treinamento em Engenharia Mecânica</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
         }
+
         header {
-            background-color: #007BFF;
-            color: white;
-            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
             text-align: center;
+            padding: 1em 0;
         }
+
         nav {
-            margin: 0;
-            padding: 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
+            background: #555;
+            color: #fff;
             padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
         }
-        .service {
-            background: #fff;
-            border-radius: 5px;
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilizando seções específicas */
+        #sobre, #servicos, #contato {
+            margin-bottom: 30px;
+        }
+
+        #sobre {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            margin-bottom: 15px;
+        }
+
+        #servicos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .servico {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 0 300px; /* Cada serviço ocupará no mínimo 300px e crescerá para preencher o espaço */
+        }
+
+        #contato form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        #contato label, #contato input, #contato textarea {
+            margin-bottom: 10px;
+        }
+
+        #contato input[type="submit"] {
+            background-color: #5cb85c;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Engenharia Mecânica Consultoria e Treinamento</h1>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Consultoria e Treinamento em Engenharia Mecânica</h1>
+        <p>Sua solução completa em engenharia mecânica.</p>
+    </header>
 
-<div class="container">
+    <nav>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
     <section id="sobre">
         <h2>Sobre Nós</h2>
-        <p>Somos uma empresa especializada em consultoria e treinamento na área de engenharia mecânica. Nossa missão é oferecer soluções eficientes e inovadoras para desafios técnicos e operacionais. Com uma equipe de profissionais experientes, estamos prontos para ajudar sua empresa a alcançar seus objetivos com excelência.</p>
+        <p>Somos uma empresa especializada em projetos, treinamentos e consultorias em engenharia mecânica. 
+           Com vasta experiência no mercado, oferecemos soluções personalizadas e inovadoras para atender às 
+           necessidades dos nossos clientes.</p>
     </section>
 
     <section id="servicos">
         <h2>Serviços</h2>
-        <div class="service">
-            <h3>Consultoria Técnica</h3>
-            <p>Oferecemos consultoria especializada para resolver problemas complexos e otimizar processos na engenharia mecânica. Nossos consultores têm vasta experiência em várias áreas, incluindo design, análise e fabricação.</p>
+        <div class="servico">
+            <h3>Projetos</h3>
+            <p>Desenvolvemos projetos mecânicos para diversos segmentos da indústria, utilizando as mais 
+               modernas ferramentas de CAD e softwares de simulação.</p>
         </div>
-        <div class="service">
-            <h3>Treinamento e Capacitação</h3>
-            <p>Proporcionamos treinamentos e workshops para melhorar as habilidades técnicas e operacionais de sua equipe. Nossos cursos cobrem tópicos como análise estrutural, dinâmica de fluidos e técnicas de fabricação avançadas.</p>
-        </div>
-        <div class="service">
-            <h3>Projetos Personalizados</h3>
-            <p>Desenvolvemos projetos personalizados de engenharia mecânica, desde a concepção até a implementação. Trabalhamos em estreita colaboração com nossos clientes para garantir que suas necessidades sejam atendidas com precisão e eficiência.</p>
-        </div>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações sobre nossos serviços ou para agendar uma consulta, entre em contato conosco:</p>
-        <p>Email: contato@engenhariamecanica.com.br</p>
-        <p>Telefone: (46) 99901-8934</p>
-        <p>Endereço: Rua Zamir José Borsatti, 275, Pato Branco - PR</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2024 Engenharia Mecânica Consultoria e Treinamento. Todos os direitos reservados.</p>
-</footer>
-
-</body>
-</html>
+        <div class="servico">
+            <h3>Treinamentos</h3>
+            <p>Oferecemos treinamentos técnicos em opeção de caldeira e NR13.
