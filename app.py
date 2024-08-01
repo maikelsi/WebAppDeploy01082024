@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("SEU_HTML.html", titulo=TITULO)
+    return render_template("site.html", titulo=TITULO)
 
 
 asgi_app = WsgiToAsgi(app)
